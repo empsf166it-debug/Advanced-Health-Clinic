@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Mediora</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Find answers to frequently asked questions about appointments, insurance, and medical services at Mediora.">
+    
+    <meta property="og:title" content="FAQ | Mediora">
+    <meta property="og:description" content="Find answers to frequently asked questions about our clinic.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mediora.com/faq.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://mediora.com/faq.html">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <style>
+        .accordion {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .accordion-header {
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            cursor: pointer;
+            padding: 1.5rem;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion-header.active, .accordion-header:hover {
+            background-color: var(--bg-secondary);
+        }
+        .accordion-header::after {
+            content: '\f067';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+        .accordion-header.active::after {
+            content: '\f068';
+            transform: rotate(180deg);
+        }
+        .accordion-content {
+            padding: 0 1.5rem;
+            background-color: var(--card-bg);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content p {
+            padding: 1.5rem 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                Mediora
+            </a>
+            
+            <nav class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="departments.html" class="nav-link">Departments</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Banner -->
+        <section class="page-header" style="background-image: linear-gradient(rgba(26, 82, 118, 0.9), rgba(26, 82, 118, 0.9)), url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="container reveal">
+                <h1>Frequently Asked Questions</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <span>/</span> <span>FAQ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Accordion FAQ & 3. Support Info -->
+        <section class="section">
+            <div class="container split-layout">
+                <div class="split-content reveal-left" style="flex: 2;">
+                    <h2 style="margin-bottom: 2rem;">General Questions</h2>
+                    
+                    <div class="accordion">
+                        <button class="accordion-header">What are your clinic operating hours?</button>
+                        <div class="accordion-content">
+                            <p>Our clinic is open Monday through Friday from 8:00 AM to 8:00 PM, and Saturday from 9:00 AM to 5:00 PM. We also have a 24/7 emergency department for urgent medical needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion">
+                        <button class="accordion-header">Do I need to make an appointment before visiting?</button>
+                        <div class="accordion-content">
+                            <p>While we do accept walk-ins for general consultations, we highly recommend booking an appointment to avoid long wait times. For specialist consultations, an appointment is mandatory.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion">
+                        <button class="accordion-header">What insurance plans do you accept?</button>
+                        <div class="accordion-content">
+                            <p>We accept most major insurance plans including MediCare Plus, Global Health Ins, and United Care. Please visit our Appointment page or contact our billing department to verify your specific coverage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion">
+                        <button class="accordion-header">How can I access my medical records?</button>
+                        <div class="accordion-content">
+                            <p>You can access your medical records securely through our online patient portal. Once you create an account, you can view test results, past diagnoses, and upcoming appointments.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <button class="accordion-header">What should I bring to my first appointment?</button>
+                        <div class="accordion-content">
+                            <p>Please bring a valid photo ID, your insurance card, a list of any medications you are currently taking, and any relevant medical records from previous healthcare providers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="split-content reveal-right" style="flex: 1;">
+                    <div class="card" style="background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                        <h3 style="margin-bottom: 1rem;">Need More Help?</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">If you couldn't find the answer to your question, our support team is always ready to assist you.</p>
+                        <ul style="list-style: none;">
+                            <li style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fa-solid fa-phone text-primary"></i>
+                                <div>
+                                    <span style="display: block; font-size: 0.8rem; color: var(--text-muted);">Call Support</span>
+                                    <strong>+1 (555) 123-4567</strong>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fa-solid fa-envelope text-primary"></i>
+                                <div>
+                                    <span style="display: block; font-size: 0.8rem; color: var(--text-muted);">Email Support</span>
+                                    <strong>info@advancedhealth.com</strong>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">Contact Us Directly</a>
+                    </div>
+
+                    <div class="card mt-2" style="background: #ef4444; color: #fff; border: none;">
+                        <h3 style="color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-truck-medical"></i> Emergency Info</h3>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.9);">If you are experiencing a life-threatening medical emergency, call our emergency line immediately.</p>
+                        <strong style="font-size: 1.5rem;">+1 (555) 911-0000</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Contact CTA -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; text-align: center;">
+            <div class="container reveal">
+                <h2 style="color: #fff;">Ready to Experience Better Healthcare?</h2>
+                <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 2rem;">Our medical team is ready to provide you with the highest quality care. Contact us today to schedule your consultation.</p>
+                <a href="appointment.html" class="btn btn-primary" style="background: #fff; color: var(--primary);">Book Your Appointment</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        Mediora
+                    </a>
+                    <p>Providing world-class medical care with compassion and expertise. Your health is our priority.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="departments.html">Cardiology</a></li>
+                        <li><a href="departments.html">Neurology</a></li>
+                        <li><a href="departments.html">Orthopedics</a></li>
+                        <li><a href="departments.html">Pediatrics</a></li>
+                        <li><a href="departments.html">Dental Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--primary);"></i> 123 Medical Drive, Health City</li>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 0.5rem; color: var(--primary);"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--primary);"></i> info@advancedhealth.com</li>
+                        <li><i class="fa-solid fa-clock" style="margin-right: 0.5rem; color: var(--primary);"></i> Mon - Sun: 24 Hours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mediora. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; display: none; align-items: center; justify-content: center; z-index: 1000; padding: 0;" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
+
+

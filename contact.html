@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mediora</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Get in touch with Mediora. View our location, contact details, and emergency information.">
+    
+    <meta property="og:title" content="Contact Us | Mediora">
+    <meta property="og:description" content="Get in touch with Mediora.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mediora.com/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://mediora.com/contact.html">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                Mediora
+            </a>
+            
+            <nav class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="departments.html" class="nav-link">Departments</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Banner -->
+        <section class="page-header" style="background-image: linear-gradient(rgba(26, 82, 118, 0.9), rgba(26, 82, 118, 0.9)), url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1920&q=80'); background-size: cover; background-position: center;">
+            <div class="container reveal">
+                <h1>Contact Us</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Contact Information & 3. Contact Form -->
+        <section class="section">
+            <div class="container split-layout">
+                <div class="split-content reveal-left" style="flex: 1;">
+                    <h2 style="margin-bottom: 2rem;">Get In Touch</h2>
+                    <p style="margin-bottom: 2rem;">Whether you have a question about our services, need to book an appointment, or require emergency assistance, we are here for you.</p>
+                    
+                    <div class="card" style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center; border-left: 4px solid var(--primary);">
+                        <div style="width: 50px; height: 50px; background: rgba(44, 116, 179, 0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0 0 0.25rem 0;">Our Location</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">123 Medical Drive, Health City, HC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: 1.5rem; display: flex; gap: 1rem; align-items: center; border-left: 4px solid var(--primary);">
+                        <div style="width: 50px; height: 50px; background: rgba(44, 116, 179, 0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0 0 0.25rem 0;">Phone Number</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">+1 (555) 123-4567 (General)</p>
+                            <p style="margin: 0; font-size: 0.9rem; color: #ef4444; font-weight: 600;">+1 (555) 911-0000 (Emergency)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="display: flex; gap: 1rem; align-items: center; border-left: 4px solid var(--primary);">
+                        <div style="width: 50px; height: 50px; background: rgba(44, 116, 179, 0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0 0 0.25rem 0;">Email Address</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">info@advancedhealth.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split-content reveal-right" style="flex: 1.5;">
+                    <div class="card" style="padding: 2.5rem;">
+                        <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+                        <form action="#" method="POST">
+                            <div class="grid grid-2" style="gap: 1.5rem; margin-bottom: 1.5rem;">
+                                <div class="form-group" style="margin: 0;">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group" style="margin: 0;">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" placeholder="How can we help?" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Google Map -->
+        <section class="section" style="padding: 0;">
+            <div style="width: 100%; height: 400px; background: #ddd; position: relative;">
+                <!-- Placeholder for an actual Google Maps iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        Mediora
+                    </a>
+                    <p>Providing world-class medical care with compassion and expertise. Your health is our priority.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="doctors.html">Our Doctors</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="departments.html">Cardiology</a></li>
+                        <li><a href="departments.html">Neurology</a></li>
+                        <li><a href="departments.html">Orthopedics</a></li>
+                        <li><a href="departments.html">Pediatrics</a></li>
+                        <li><a href="departments.html">Dental Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--primary);"></i> 123 Medical Drive, Health City</li>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 0.5rem; color: var(--primary);"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--primary);"></i> info@advancedhealth.com</li>
+                        <li><i class="fa-solid fa-clock" style="margin-right: 0.5rem; color: var(--primary);"></i> Mon - Sun: 24 Hours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mediora. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; display: none; align-items: center; justify-content: center; z-index: 1000; padding: 0;" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
+
+

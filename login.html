@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Mediora</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <style>
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            border-radius: var(--radius-md);
+            color: var(--text-main);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            margin-bottom: 0.5rem;
+        }
+        .social-btn:hover {
+            background: var(--bg-secondary);
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 1.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .divider:not(:empty)::before {
+            margin-right: .25em;
+        }
+        .divider:not(:empty)::after {
+            margin-left: .25em;
+        }
+        .password-input-wrap {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--text-muted);
+            background: none;
+            border: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-layout" style="background-image: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1920&q=80'); background-size: cover; background-position: center; position: relative;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(15, 23, 42, 0.8);"></div>
+        
+        <div class="card auth-card reveal" style="position: relative; z-index: 10;">
+            <div class="text-center mb-2">
+                <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem;">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    Mediora
+                </a>
+                <h2 style="font-size: 1.5rem;">Welcome Back</h2>
+                <p style="font-size: 0.9rem;">Sign in to access your patient portal</p>
+            </div>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <label class="form-label" style="margin-bottom: 0;">Password</label>
+                        <a href="#" style="font-size: 0.85rem; font-weight: 500;">Forgot Password?</a>
+                    </div>
+                    <div class="password-input-wrap">
+                        <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                        <button type="button" class="toggle-password" onclick="togglePasswordVisibility('password', this)">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-group" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <input type="checkbox" id="remember" style="width: 16px; height: 16px;">
+                    <label for="remember" style="font-size: 0.9rem; color: var(--text-muted); cursor: pointer;">Remember me for 30 days</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+                
+                <div class="divider">or continue with</div>
+                
+                <button type="button" class="social-btn">
+                    <i class="fa-brands fa-google text-primary"></i> Google
+                </button>
+                <button type="button" class="social-btn">
+                    <i class="fa-brands fa-apple"></i> Apple
+                </button>
+                
+                <div class="text-center mt-2" style="font-size: 0.9rem;">
+                    Don't have an account? <a href="signup.html" style="font-weight: 600;">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility(inputId, btnElement) {
+            const input = document.getElementById(inputId);
+            const icon = btnElement.querySelector('i');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
