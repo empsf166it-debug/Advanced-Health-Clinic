@@ -1,11 +1,25 @@
 /* Grids */
 .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-md);
 }
-.grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.grid-3 { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
-.grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.grid-2 > * { flex: 1 1 400px; max-width: 600px; min-width: 0; }
+.grid-3 > * { flex: 1 1 300px; max-width: 450px; min-width: 0; }
+.grid-4 > * { flex: 1 1 220px; max-width: 350px; min-width: 0; }
+
+@media (max-width: 1024px) {
+  .grid-4 > * {
+    flex-basis: calc(50% - var(--space-md));
+    max-width: none;
+  }
+}
+@media (max-width: 767px) {
+  .grid-4 > * {
+    flex-basis: 100%;
+  }
+}
 
 /* Hero Section */
 .hero {
@@ -74,7 +88,7 @@
   grid-row: span 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .split-layout {
     flex-direction: column;
   }
@@ -101,16 +115,17 @@
 
 /* Doctor Card Specifics */
 .doctor-image {
-  width: 100%;
+  width: calc(100% + 2rem);
+  max-width: none;
   height: 300px;
-  object-fit: cover;
-  border-radius: var(--radius-md);
-  margin-bottom: 1rem;
+  object-fit: contain;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  margin: -1rem -1rem 1rem;
 }
 .social-links {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 .social-links a {
   color: var(--text-muted);

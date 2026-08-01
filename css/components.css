@@ -148,6 +148,9 @@
   padding: var(--space-md);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
   border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -167,13 +170,14 @@
   color: var(--text-muted);
 }
 .footer .logo {
-  color: var(--text-main);
+  color: var(--primary);
   font-size: 1.5rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 .footer a:hover {
   color: var(--secondary);
 }
@@ -249,6 +253,9 @@
   .header-actions .btn {
     display: none;
   }
+  .mobile-only {
+    display: block !important;
+  }
   .dropdown-menu {
     position: static;
     opacity: 1;
@@ -264,3 +271,7 @@
   }
 }
 
+
+.mobile-only { display: none; }
+
+@media (max-width: 1024px) { .text-center-mobile { text-align: center; } }

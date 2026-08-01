@@ -63,8 +63,8 @@
                 <li><a href="doctors.html" class="nav-link">Doctors</a></li>
                 <li><a href="departments.html" class="nav-link">Departments</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="faq.html" class="nav-link" style="display:none;">FAQ</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="mobile-only" style="margin-top: 1rem; width: 100%;"><a href="appointment.html" class="btn btn-primary" style="width: 100%; text-align: center;">Book Appointment</a></li>
             </nav>
 
             <div class="header-actions">
@@ -86,9 +86,9 @@
                     <h1>Your Health is Our Top Priority</h1>
                     <p>Experience world-class healthcare with our expert medical team and state-of-the-art facilities
                         designed for your comfort and recovery.</p>
-                    <div class="mt-2">
+                    <div class="mt-2" style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <a href="appointment.html" class="btn btn-primary">Book a Consultation</a>
-                        <a href="services.html" class="btn btn-outline" style="margin-left: 1rem;">Our Services</a>
+                        <a href="services.html" class="btn btn-outline">Our Services</a>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
                     <h2>Why Patients Choose Mediora</h2>
                     <p>We are committed to providing exceptional care in a comfortable environment. Our focus is always
                         on your well-being.</p>
-                    <div class="grid mt-2" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                    <div class="grid mt-2 text-center-mobile" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
                         <div>
                             <h3 style="font-size: 2.5rem; color: var(--primary);"><span class="counter"
                                     data-target="15">0</span>+</h3>
@@ -237,7 +237,7 @@
                         </div>
                         <div>
                             <h3 style="font-size: 2.5rem; color: var(--primary);"><span class="counter" data-target="10"
-                                    data-suffix="k">0</span>k</h3>
+                                    data-suffix="k">0</span></h3>
                             <p>Happy Patients</p>
                         </div>
                         <div>
@@ -333,10 +333,10 @@
                 <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 2rem;">Don't delay your health
                     needs. Schedule an appointment with our specialists today and take the first step towards better
                     health.</p>
-                <a href="appointment.html" class="btn btn-primary" style="background: #fff; color: var(--primary);">Book
-                    Appointment Now</a>
-                <a href="contact.html" class="btn btn-outline"
-                    style="border-color: #fff; color: #fff; margin-left: 1rem;">Contact Us</a>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="appointment.html" class="btn btn-primary" style="background: #fff; color: var(--primary);">Book Appointment Now</a>
+                    <a href="contact.html" class="btn btn-outline" style="border-color: #fff; color: #fff;">Contact Us</a>
+                </div>
             </div>
         </section>
     </main>
