@@ -117,10 +117,19 @@
 .doctor-image {
   width: calc(100% + 2rem);
   max-width: none;
-  height: 300px;
-  object-fit: contain;
+  height: 200px;
+  object-fit: cover;
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   margin: -1rem -1rem 1rem;
+}
+
+.doctor-image + h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.doctor-image ~ p {
+  font-size: 0.875rem;
 }
 .social-links {
   display: flex;
